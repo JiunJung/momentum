@@ -1,4 +1,4 @@
-const todoForm = document.querySelector("#todo-form");
+const todoForm = document.querySelector("#todo-form"); //깃허브 커밋 확인!
 const todoList = document.querySelector("#todo-list");
 const todoText = document.querySelector("#todo-form input"); //todoList.querySelector("input"); 이라고도 할 수 있음.
 let todoArray = []; //todo리스트가 저장되어있는 배열 let으로 한 이유를 알아야 해!
