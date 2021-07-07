@@ -43,7 +43,7 @@ function showToDoList(todoSaved){ //여기서의 todosaved는 매개변수일 �
   const span = document.createElement("span");
   span.innerText = todoSaved.text;
   const button = document.createElement("button"); //삭제버튼생성
-  button.innerText = "❌"; //imogi 넣어도 됨  
+  button.innerText = "✓"; //imogi 넣어도 됨  
   button.addEventListener("click",deleteToDo);
   toDoLiEliment.appendChild(span);
   toDoLiEliment.appendChild(button);

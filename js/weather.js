@@ -7,9 +7,9 @@ function success(pos){
   const lon = pos.coords.longitude;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
   fetch(url).then(response => response.json()).then(data => {
-    const location = document.querySelector("#weather span:first-child");
+    const location = document.querySelector("#weather img");
     const weather = document.querySelector("#weather span:last-child");
-    location.innerText = data.name;
+    location.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; 
     weather.innerText = `${data.weather[0].main} / ${data.main.temp}℃`;
   });
 }
