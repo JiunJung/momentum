@@ -4,32 +4,62 @@
   box-sizing: border-box;
 }
 .body-color-pink{
-  background-color: #ffb6c1;
+  animation-name: bgcolor-pink;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
 }
 .body-color-skyblue{
-  background-color: #87cefa;  
+  animation-name: bgcolor-skyblue;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;  
 }
-.body-color-salmon{
-  background-color: #ffa07a;  
+.body-color-green{
+  animation-name: bgcolor-green;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;  
+}
+@keyframes bgcolor-pink {
+  from{background-color: #ffb6c1;}
+  25%{background-color: #ffa07a;}
+  50%{background-color: #ecd675;}
+  75%{background-color: #ffa07a;}
+  to{background-color: #ffb6c1;}
+}
+@keyframes bgcolor-skyblue {
+  from{background-color: #b6eaff;}
+  25%{background-color: #7a92ff;}
+  50%{background-color: #bc75ec;}
+  75%{background-color: #7a92ff;}
+  to{background-color: #b6eaff;}
+}
+@keyframes bgcolor-green {
+  from{background-color: #cdffac;}
+  25%{background-color: #8add45;}
+  50%{background-color: #1da734;}
+  75%{background-color: #8add45;}
+  to{background-color: #cdffac;}
 }
 #container{
-  display: block;
   overflow: hidden;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;  
 }
-#container > img{
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+#change-botton{
+  float: left;
+  border: 1.5px solid rgba(107, 107, 107, 0.747) ;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 100px;
+  height: 20px;
+  margin: 10px;
+}
+#change-botton:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
 }
 #weather{
-  width: 200px;
-  height: 30px;
-  line-height: 30px;
+  width: 170px;
+  height: 40px;
   position: fixed;
   right: 0px; 
 }
@@ -49,6 +79,10 @@
   margin: 180px auto 30px;
   text-align: center;
   font-size: 72px;
+}
+#clock:hover{
+  transition: all 1s;
+  transform: scale(1.2);
 }
 #login-form{
   width: 500px;
@@ -71,10 +105,21 @@
   width: 85px;
   height: 25px;
 }
+#login-form button:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+
 #greeting{
   text-align: center;
+  width: 100%;
+  height: 40px;
+  margin: 30px auto;
+  overflow: hidden;
 }
 #todo-form input{
+  clear: left;
   background-color: transparent;
   border: none;
   border-bottom : 1px solid #fff;
@@ -98,6 +143,12 @@
   padding-left: 10px;
   border: none;
   background-color: transparent;
+}
+#todo-list li button:hover{
+  cursor: pointer;
+  color: red;
+  transition: all 0.5s;
+  transform: scale(1.2);
 }
 #quote{
   text-align: center;
