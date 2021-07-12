@@ -86,16 +86,16 @@
   transform: scale(1.2);
 }
 #login-form{
-  width: 500px;
+  width: 290px;
   height: 30px;
   line-height: 30px;
   margin:0 auto;
+  padding: 0 auto;
 }
 #login-form input{
   background-color: transparent;
   border: 1.5px solid rgba(107, 107, 107, 0.747) ;
   border-radius: 5px;
-  margin-left: 50px;
   width: 215px;
   height: 25px;
 }
@@ -133,7 +133,7 @@
   text-align: center;
   display: block;
   width: auto;
-  height: 250px;
+  height: 150px;
 }
 #todo-list li span{
   font-size: 1.3em;
@@ -160,3 +160,9 @@
 .hidden{
   display: none;
 }
+@media screen and (min-width:400px) {
+  #todo-list{
+    height: 350px;
+  }
+}
+
