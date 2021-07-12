@@ -74,10 +74,11 @@
   line-height: 40px;
 }
 #clock{
-  width: 500px;
+  display: block;
+  width: 250px;
   height: 80px;
   margin: 180px auto 30px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 72px;
 }
 #clock:hover{
@@ -95,14 +96,14 @@
   border: 1.5px solid rgba(107, 107, 107, 0.747) ;
   border-radius: 5px;
   margin-left: 50px;
-  width: 312px;
+  width: 215px;
   height: 25px;
 }
 #login-form button{
   background-color: transparent;
   border: 1.5px solid rgba(107, 107, 107, 0.747) ;
   border-radius: 5px;
-  width: 85px;
+  width: 70px;
   height: 25px;
 }
 #login-form button:hover{
@@ -124,7 +125,7 @@
   border: none;
   border-bottom : 1px solid #fff;
   display: block;
-  width: 400px;
+  width: 330px;
   height: 28px;
   margin: 30px auto;
 }
@@ -152,6 +153,9 @@
 }
 #quote{
   text-align: center;
+}
+#quote span:last-child{
+  display: block;
 }
 .hidden{
   display: none;
