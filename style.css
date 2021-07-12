@@ -75,10 +75,10 @@
 }
 #clock{
   display: block;
-  width: 250px;
+  width: 80vw;
   height: 80px;
   margin: 14vh auto 8vh;
-  /* text-align: center; */
+  text-align: center;
   font-size: 72px;
 }
 #clock:hover{
