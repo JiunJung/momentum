@@ -77,7 +77,7 @@
   display: block;
   width: 250px;
   height: 80px;
-  margin: 180px auto 30px;
+  margin: 120px auto 30px;
   /* text-align: center; */
   font-size: 72px;
 }
@@ -134,6 +134,7 @@
   display: block;
   width: auto;
   height: 150px;
+  font-size: 0.9em;
 }
 #todo-list li span{
   font-size: 1.3em;
@@ -163,6 +164,9 @@
 @media screen and (min-width:400px) {
   #todo-list{
     height: 350px;
+  }
+  #clock{
+    margin: 230px auto 30px;;
   }
 }
 
