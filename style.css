@@ -154,7 +154,12 @@
   transform: scale(1.2);
 }
 #quote{
+  width : 100%;
+  margin: 0px auto;
   text-align: center;
+  position: fixed;
+  bottom: 0px;
+  
 }
 #quote span:last-child{
   display: block;
@@ -164,9 +169,16 @@
 }
 @media screen and (min-width:400px) {
   #todo-list{
-    height: 350px;
+    height: 250px;
   }
   #clock{
+    width:60vw;
+    margin: 230px auto 30px;;
+  }
+}
+@media screen and (min-width:800px) {
+  #clock{
+    width:40vw;
     margin: 230px auto 30px;;
   }
 }
