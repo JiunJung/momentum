@@ -35,10 +35,14 @@ function showToDoList(todoObj){
   const span = document.createElement("span");
   span.innerText = todoObj.text;
   const button = document.createElement("button");
-  button.innerText = "✓";
+  const button2 = document.createElement("button");
+  button.innerText = "🗑";
+  button2.innerText = "✓";
   button.addEventListener("click",deleteToDo);
+  button2.addEventListener("click",iveDone);
   todoLi.appendChild(span);
   todoLi.appendChild(button);
+  todoLi.appendChild(button2);
   todoUl.appendChild(todoLi);
 }
 
@@ -48,6 +52,12 @@ function deleteToDo(event){
   saveToDos();
   parent.remove();
 }
+function iveDone(event){
+  const parent = event.target.parentNode;
+  parent.classList.add("done");
+}
+
+
 
 
 
